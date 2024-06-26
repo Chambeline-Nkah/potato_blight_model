@@ -19,8 +19,14 @@ Model training and evaluation
 The model was trained using the Adam optimizer and a categorical cross-entropy loss function. The model was evaluated on the test dataset using the accuracy metric.
 
 Model 1: Simple Machine Learning Model
-The simple machine learning model was trained using the basic convolutional neural network architecture with 50 epochs, achieving an accuracy of 98.81% on the test dataset, with a loss of  0.0394 indicating a strong performance, while the accuracy on the validation dataset was 99.22% with a validation loss of 0.0435. This proves that the model adapts well to new, unseen data and is robust in its performance.
+The simple machine learning model was trained using the basic convolutional neural network architecture with 50 epochs, achieving an accuracy of 99.24% on the test dataset, with a loss of  0.0211 indicating a strong performance, while the accuracy on the validation dataset was 94.53% with a validation loss of 0.1431. This proves that the model adapts well to new, unseen data and is robust in its performance.
 
 Model 2: Model with Optimization Techniques
-The second model was trained using Adam as an optimizer and using L1 regularisation but this time around with only 30 epochs, achieved an accuracy of 97.80% on the test dataset, while the accuracy on the validation dataset was 84.38% with a validation loss of 0.5835.  This suggests that the model with optimization techniques performed well on the test dataset but struggled with overfitting on the validation dataset.
-The comparison between the simple model and the model with optimization techniques highlights the importance of the number of epochs in the performance of a model. The simple model used 50 epochs, which resulted in a high accuracy and low loss on both the test and validation datasets. In contrast, the model with optimization techniques used 30 epochs, which resulted in a lower accuracy and higher loss on the validation dataset. This suggests that the number of epochs plays a significant role in the performance of a model, and that using more epochs can lead to better results.
+The second model was trained using Adam as an optimizer and using L1 regularisation still with 50 epochs, achieved an accuracy of 98.39% on the test dataset with a loss of 0.0744, while the accuracy on the validation dataset was 96.88% with a validation loss of 0.1103.  This suggests that the model with optimization techniques performed well on the test dataset but struggled with overfitting on the validation dataset.
+
+The key findings are:
+1. The simple machine learning model, trained for 50 epochs, achieved a high accuracy of 99.24% on the test dataset, with a low loss of 0.0211. This suggests the model was able to generalize well to new, unseen data.
+2. The model with optimization techniques, including L1 regularization and 50 epochs of training as well, also performed well, achieving 98.39% accuracy on the test dataset. However, it struggled more with overfitting, as evidenced by the lower 96.88% accuracy on the validation dataset.
+3. The data preprocessing steps, including scaling the pixel values and applying data augmentation, were crucial in improving the models' performance and preventing overfitting.
+
+In conclusion, both models performed well, with the simple machine learning model demonstrating particularly strong and robust performance.
