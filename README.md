@@ -30,3 +30,19 @@ The key findings are:
 3. The data preprocessing steps, including scaling the pixel values and applying data augmentation, were crucial in improving the models' performance and preventing overfitting.
 
 In conclusion, both models performed well, with the simple machine learning model demonstrating particularly strong and robust performance.
+
+
+Now, inorder to have everything running locally on your PC, you may follow the following steps:
+- Clone the repository: git clone <repository_url>
+- Navigate to the potato_blight_model folder: cd potato_blight_model
+
+1. Inorder to run the FastAPI, follow the following steps:
+- Navigate to the api folder: cd api
+- Run the main.py file using python on your terminal: python main.py
+- Then you can make a post request
+
+2. Inorder to run the frontend application, just execute the following:
+- Navigate to the potato_blight_model folder: cd potato_blight_model
+- Navigate to the frontend folder: cd frontend
+- Run the following command on your terminal: npm run start
+- When the UI screen opens, select any random image of a potato leaf locally saved on your PC and it will print out the name of the disease the potato plant is suffering from, as well as the confidence level.
